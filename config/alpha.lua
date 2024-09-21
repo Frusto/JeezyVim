@@ -41,7 +41,7 @@ dashboard.section.buttons.val = {
   dashboard.button('q', '  Quit JeezyVim', ':qa<CR>'),
 }
 
-dashboard.section.footer.val = 'Free Palestine'
+dashboard.section.footer.val = 'I use NiX BTW'
 
 dashboard.section.footer.opts.hl = 'Type'
 dashboard.section.header.opts.hl = 'Include'
