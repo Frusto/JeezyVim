@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  colorschemes.kanagawa = {
+  colorschemes.catppuccin = {
     enable = pkgs.lib.mkDefault true;
   };
 }
