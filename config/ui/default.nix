@@ -4,5 +4,6 @@
     ./indent-blankline.nix
     ./specs.nix
     ./notifications.nix
+    ./wilder.nix
   ];
 }
