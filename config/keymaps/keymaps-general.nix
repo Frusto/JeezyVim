@@ -266,5 +266,16 @@
         desc = "Paste without yanking";
       };
     }
+
+    {
+      action = "<Esc>";
+      key = "jk";
+      mode = "i";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Return to normal mode";
+      };
+    }
   ];
 }

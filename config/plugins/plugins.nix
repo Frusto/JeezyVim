@@ -55,5 +55,8 @@
       enableTransmute = pkgs.lib.mkDefault true;
       treesitterIntegration.enable = pkgs.lib.mkDefault true;
     };
+    neogit = {
+      enable = pkgs.lib.mkDefault true;
+    };
   };
 }
