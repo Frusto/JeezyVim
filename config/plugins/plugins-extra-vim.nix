@@ -6,7 +6,8 @@
     zen-mode-nvim
     twilight-nvim
     vim-just
-    (vimUtils.buildVimPlugin {
+
+    (pkgs.vimUtils.buildVimPlugin {
       name = "vim-better-sml";
       src = pkgs.fetchFromGitHub {
         owner = "jez";
