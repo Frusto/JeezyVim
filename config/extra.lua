@@ -32,3 +32,6 @@ if string.match(vim.loop.os_uname().release, 'WSL2') then
     },
   }
 end
+
+-- Remove tilde ~
+vim.opt.fillchars = { eob = " " }
