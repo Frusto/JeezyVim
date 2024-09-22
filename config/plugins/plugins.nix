@@ -58,5 +58,14 @@
     neogit = {
       enable = pkgs.lib.mkDefault true;
     };
+    multicursor = {
+      enable = pkgs.lib.mkDefault true;
+    };
+    oil = {
+      enable = pkgs.lib.mkDefault true;
+    };
+    leap = {
+      enable = pkgs.lib.mkDefault true;
+    };
   };
 }
