@@ -67,8 +67,5 @@
     leap = {
       enable = pkgs.lib.mkDefault true;
     };
-    headlines = {
-      enable = pkgs.lib.mkDefault true;
-    };
   };
 }
