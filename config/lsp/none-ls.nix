@@ -33,7 +33,7 @@
         prettier.enable = pkgs.lib.mkDefault true;
         prettier.disableTsServerFormatter = pkgs.lib.mkDefault true;
         typstfmt.enable = pkgs.lib.mkDefault true;
-        smlfmlt.enable = pkgs.lib.mkDefault true;
+        smlfmt.enable = pkgs.lib.mkDefault true;
       };
     };
   };
