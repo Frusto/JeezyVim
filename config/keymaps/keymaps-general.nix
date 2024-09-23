@@ -26,18 +26,6 @@
       mode = "n";
     }
 
-    {
-      action = ":vsplit<CR>";
-      key = "|";
-      mode = "n";
-    }
-
-    {
-      action = ":split<CR>";
-      key = "-";
-      mode = "n";
-    }
-
     # Terminal escape back to nvim
     {
       action = "<C-\\><C-n>";
@@ -90,7 +78,7 @@
     # Resize window with Ctrl + arrow keys
     {
       action = "<cmd>resize +4<CR>";
-      key = "<C-K>";
+      key = "<C-Up>";
       mode = "n";
       options = {
         noremap = true;
@@ -100,7 +88,7 @@
     }
     {
       action = "<cmd>resize -4<CR>";
-      key = "<C-J>";
+      key = "<C-Down>";
       mode = "n";
       options = {
         noremap = true;
@@ -110,7 +98,7 @@
     }
     {
       action = "<cmd>vertical resize +4<CR>";
-      key = "<C-J>";
+      key = "<C-Left>";
       mode = "n";
       options = {
         noremap = true;
@@ -120,7 +108,7 @@
     }
     {
       action = "<cmd>vertical resize -4<CR>";
-      key = "<C-L>";
+      key = "<C-Right>";
       mode = "n";
       options = {
         noremap = true;
@@ -209,7 +197,7 @@
     # Move text up and down in visual mode
     {
       action = ":move '>+1<CR>gv=gv";
-      key = "<leader>aj";
+      key = "<A-j>";
       mode = "v";
       options = {
         noremap = true;
@@ -219,7 +207,7 @@
     }
     {
       action = ":move '<-2<CR>gv=gv";
-      key = "<leader>ak";
+      key = "<A-k>";
       mode = "v";
       options = {
         noremap = true;
@@ -230,7 +218,7 @@
     # Visual mode paste
     {
       action = ''"_dP'';
-      key = "P";
+      key = "p";
       mode = "v";
       options = {
         noremap = true;
@@ -238,7 +226,7 @@
         desc = "Paste without yanking";
       };
     }
-
+    # Additional keybind for insert to normal mode
     {
       action = "<Esc>";
       key = "jk";
