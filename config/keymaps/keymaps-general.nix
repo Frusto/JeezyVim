@@ -21,14 +21,8 @@
     }
 
     {
-      action = "o<Esc>";
-      key = "o";
-      mode = "n";
-    }
-
-    {
-      action = "O<Esc>";
-      key = "O";
+      action = ":bprevious<cr>";
+      key = "<C-[>";
       mode = "n";
     }
 
@@ -93,32 +87,10 @@
       };
     }
 
-    # Tab navigation
-    {
-      action = "<cmd>tabprevious<CR>";
-      key = "[t";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "previous tab";
-      };
-    }
-    {
-      action = "<cmd>tabnext<CR>";
-      key = "]t";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "next tab";
-      };
-    }
-
     # Resize window with Ctrl + arrow keys
     {
       action = "<cmd>resize +4<CR>";
-      key = "<C-Up>";
+      key = "<C-K>";
       mode = "n";
       options = {
         noremap = true;
@@ -128,7 +100,7 @@
     }
     {
       action = "<cmd>resize -4<CR>";
-      key = "<C-Down>";
+      key = "<C-J>";
       mode = "n";
       options = {
         noremap = true;
@@ -138,7 +110,7 @@
     }
     {
       action = "<cmd>vertical resize +4<CR>";
-      key = "<C-Left>";
+      key = "<C-J>";
       mode = "n";
       options = {
         noremap = true;
@@ -148,7 +120,7 @@
     }
     {
       action = "<cmd>vertical resize -4<CR>";
-      key = "<C-Right>";
+      key = "<C-L>";
       mode = "n";
       options = {
         noremap = true;
@@ -237,7 +209,7 @@
     # Move text up and down in visual mode
     {
       action = ":move '>+1<CR>gv=gv";
-      key = "<A-j>";
+      key = "<leader>aj";
       mode = "v";
       options = {
         noremap = true;
@@ -247,7 +219,7 @@
     }
     {
       action = ":move '<-2<CR>gv=gv";
-      key = "<A-k>";
+      key = "<leader>ak";
       mode = "v";
       options = {
         noremap = true;
@@ -258,7 +230,7 @@
     # Visual mode paste
     {
       action = ''"_dP'';
-      key = "p";
+      key = "P";
       mode = "v";
       options = {
         noremap = true;

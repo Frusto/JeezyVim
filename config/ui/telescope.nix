@@ -69,7 +69,7 @@
     };
     keymaps = {
       "<leader>f" = {
-        action = "git_files";
+        action = "find_files";
         options.desc = "Files";
       };
       "<leader>s" = {

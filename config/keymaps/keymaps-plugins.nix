@@ -121,17 +121,7 @@
     # Terminal
     {
       action = "<cmd>ToggleTerm<CR>";
-      key = "<C-t>";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "ToggleTerm";
-      };
-    }
-    {
-      action = "<cmd>ToggleTerm<CR>";
-      key = "<C-t>";
+      key = "<leader>ot";
       mode = "t";
       options = {
         noremap = true;
