@@ -4,8 +4,6 @@ local ok, wilder = pcall(require, "wilder")
 if not ok then
     return
 end
--- Your existing wilder setup
-wilder.setup({ modes = { ":", "/", "?" } })
 
 vim.cmd("highlight Pmenu guibg=NONE")
 
