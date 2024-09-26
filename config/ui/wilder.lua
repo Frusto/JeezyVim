@@ -1,11 +1,14 @@
--- Setup Wilder
-vim.cmd([[
-call wilder#setup({'modes': [':', '/', '?']})
-]])
+-- Load wilder.nvim
+local wilder = require("wilder")
 
-vim.cmd("highlight Pmenu guibg=NONE")
+-- Setup wilder
+wilder.setup({
+    modes = { ":", "/", "?" },
+})
 
 -- Configure gradient highlights (customize as needed)
+vim.cmd("highlight Pmenu guibg=NONE")
+
 local gradient = {
     "#f4468f",
     "#fd4a85",
